@@ -8,7 +8,7 @@ The goal of the project is to build a robust generative search system capable of
 We will be using a single long life insurance policy document for this project.
 
 **3. Document**
-The policy document can be found here
+The policy document can be found as Principal-Sample-Life-Insurance-Policy.
 
 **4. Approach**
 The project should implement all the three layers effectively. It will be key to try out various strategies and experiments in various layers in order to build an effective search system. Let's explore what we need to do in each of the layers.
