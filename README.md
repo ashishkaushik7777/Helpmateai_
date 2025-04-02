@@ -9,6 +9,7 @@ We will be using a single long life insurance policy document for this project.
 
 **3. Document**
 The policy document can be found here
+
 **4. Approach**
 The project should implement all the three layers effectively. It will be key to try out various strategies and experiments in various layers in order to build an effective search system. Let's explore what we need to do in each of the layers.
 
@@ -29,19 +30,13 @@ Reading & Processing PDF File: We will be using pdfplumber to read and process t
 
 Document Chunking: The document contains several pages and contains huge text, before generating the embeddings, we need to generate the chunks. Let's start with a basic chunking technique, and chunking the text with fixed size.
 
-Generating Embeddings: Generates embedding with SentenceTransformer with all-MiniLM-L6-v2 model.
+**Generating Embeddings:** Generates embedding with SentenceTransformer with all-MiniLM-L6-v2 model.
 
-Store Embeddings In ChromaDB: In this section we will store embedding in ChromaDB.
+**Store Embeddings In ChromaDB:** In this section we will store embedding in ChromaDB.
 
-Semantic Search with Cache: In this section we will introduce cache collection layer for embeddings.
+**Semantic Search with Cache:** In this section we will introduce cache collection layer for embeddings.
 
-Re-Ranking with a Cross Encoder: Re-ranking the results obtained from the semantic search will sometime significantly improve the relevance of the retrieved results. This is often done by passing the query paired with each of the retrieved responses into a cross-encoder to score the relevance of the response w.r.t. the query.
+**Re-Ranking with a Cross Encoder:** Re-ranking the results obtained from the semantic search will sometime significantly improve the relevance of the retrieved results. This is often done by passing the query paired with each of the retrieved responses into a cross-encoder to score the relevance of the response w.r.t. the query.
 
-Retrieval Augmented Generation: Now we have the final top search results, we can pass it to an GPT 3.5 along with the user query and a well-engineered prompt, to generate a direct answer to the query along with citations.
+**Retrieval Augmented Generation:** Now we have the final top search results, we can pass it to an GPT 3.5 along with the user query and a well-engineered prompt, to generate a direct answer to the query along with citations.
 
-6. System Architecture
-
-
-**7. Prerequisites**
-Python 3.7+
-Please ensure that you add your OpenAI API key to the empty text file named "OpenAI_API_Key" in order to access the OpenAI API.
