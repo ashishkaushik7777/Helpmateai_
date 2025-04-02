@@ -44,3 +44,5 @@ Reading & Processing PDF File: We will be using pdfplumber to read and process t
 Python 3.7+
 Please ensure that you add your OpenAI API key to the empty text file named "OpenAI_API_Key" in order to access the OpenAI API.
 
+
+
