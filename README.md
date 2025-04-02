@@ -1,6 +1,6 @@
 # Helpmateai_
 **. Background**
-This project demonstrate "Building Effective Search Systems HelpMateAI" with a long insurance policy document using RAG techniques.
+The goal of the project will be to build a robust generative search system capable of effectively and accurately answering questions from a policy document.  
 
 **2. Problem Statement**
 The goal of the project is to build a robust generative search system capable of effectively and accurately answering questions from a policy document.
