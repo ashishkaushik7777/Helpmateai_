@@ -28,7 +28,7 @@ The Generation Layer: In the generation layer, the final prompt that we design i
 **5. System Layers**
 Reading & Processing PDF File: We will be using pdfplumber to read and process the PDF files. pdfplumber allows for better parsing of the PDF file as it can read various elements of the PDF apart from the plain text, such as, tables, images, etc. It also offers wide functionalities and visual debugging features to help with advanced preprocessing as well.
 
-Document Chunking: The document contains several pages and contains huge text, before generating the embeddings, we need to generate the chunks. Let's start with a basic chunking technique, and chunking the text with fixed size.
+**Document Chunking:** The document contains several pages and contains huge text, before generating the embeddings, we need to generate the chunks. Let's start with a basic chunking technique, and chunking the text with fixed size.
 
 **Generating Embeddings:** Generates embedding with SentenceTransformer with all-MiniLM-L6-v2 model.
 
@@ -39,4 +39,8 @@ Document Chunking: The document contains several pages and contains huge text, b
 **Re-Ranking with a Cross Encoder:** Re-ranking the results obtained from the semantic search will sometime significantly improve the relevance of the retrieved results. This is often done by passing the query paired with each of the retrieved responses into a cross-encoder to score the relevance of the response w.r.t. the query.
 
 **Retrieval Augmented Generation:** Now we have the final top search results, we can pass it to an GPT 3.5 along with the user query and a well-engineered prompt, to generate a direct answer to the query along with citations.
+
+**6. Prerequisites**
+Python 3.7+
+Please ensure that you add your OpenAI API key to the empty text file named "OpenAI_API_Key" in order to access the OpenAI API.
 
